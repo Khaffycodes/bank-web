@@ -602,6 +602,10 @@ video {
   inset: 0px;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .flex {
   display: flex;
 }
