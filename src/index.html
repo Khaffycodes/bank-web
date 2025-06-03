@@ -4,12 +4,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bank website</title>
     <link rel="stylesheet" href="../dist/output.css" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body>
+  <body class="bg-color-primary text-color-white tracking-wider">
     <header>
-      <nav>
-        <div></div>
+      <nav class="container flex justify-between items-center">
+        <div class="py-5 text-color-secondary font-bold text-3xl">
+          <a href="#home"><span class="text-color-white">Light</span>Code.</a>
+        </div>
+        <div>
+          <ul class="hidden lg:flex items-center space-x-6">
+            <li>
+              <a
+                href="#home"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#features"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#testimonials"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a
+                href="#pricing"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#blog"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <button
+                class="bg-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80"
+              >
+                free trial
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!-- Mobile screen -->
+        <div id="hamburger" class="lg:hidden cursor-pointer">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div
+          id="menu"
+          class="hidden bg-color-primary-dark h-[100vh] absolute inset-0"
+        >
+          <ul class="h-full grid place-items-center py-20">
+            <li>
+              <a
+                id="hlink"
+                href="#home"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                id="hlink"
+                href="#features"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                id="hlink"
+                href="#testimonials"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a
+                id="hlink"
+                href="#pricing"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                id="hlink"
+                href="#blog"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                id="hlink"
+                href="#contact"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <button
+                class="bg-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80"
+              >
+                free trial
+              </button>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
+
+    <script>
+      //mobile menu
+      const hamburger = document.querySelector('#hamburger');
+      const menu = document.querySelector('#menu');
+      const hlink = document.querySelector('#hlink');
+    </script>
   </body>
 </html>
