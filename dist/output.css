@@ -614,12 +614,16 @@ video {
   z-index: 50;
 }
 
+.m-3 {
+  margin: 0.75rem;
+}
+
 .m-auto {
   margin: auto;
 }
 
-.m-3 {
-  margin: 0.75rem;
+.mb-1 {
+  margin-bottom: 0.25rem;
 }
 
 .mb-10 {
@@ -638,16 +642,12 @@ video {
   margin-bottom: 1rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
 .mb-6 {
   margin-bottom: 1.5rem;
 }
 
-.mb-1 {
-  margin-bottom: 0.25rem;
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .inline-block {
@@ -666,16 +666,16 @@ video {
   display: none;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .h-\[100vh\] {
   height: 100vh;
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-20 {
-  height: 5rem;
 }
 
 .min-h-\[40vh\] {
@@ -734,16 +734,16 @@ video {
   border-radius: 1rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
 
 .rounded-md {
   border-radius: 0.375rem;
-}
-
-.rounded-full {
-  border-radius: 9999px;
 }
 
 .border-2 {
@@ -777,11 +777,6 @@ video {
 .bg-color-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(255 125 59 / var(--tw-bg-opacity, 1));
-}
-
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[url\(\'img\/line\.png\'\)\] {
@@ -849,6 +844,11 @@ video {
   text-align: center;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -867,11 +867,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .font-bold {
@@ -971,6 +966,40 @@ video {
   opacity: 0.3;
   --tw-blur: blur(40px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.user-text {
+  display: none;
+}
+
+.user-text.active-text {
+  display: block;
+  animation: moveup 1s linear forwards;
+}
+
+.user-pic {
+  transition: all 0.2 ease;
+}
+
+.user-pic.active-pic {
+  border: 2px solid #ff7d3b;
+}
+
+@keyframes moveup {
+  0% {
+    margin-top: 40px;
+    opacity: 0;
+  }
+
+  50% {
+    margin-top: 20px;
+    opacity: 0.1;
+  }
+
+  100% {
+    margin-top: 0px;
+    opacity: 1;
+  }
 }
 
 .hover\:bg-color-primary-dark:hover {
