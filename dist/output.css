@@ -1021,6 +1021,10 @@ video {
   transform: rotateY(180deg);
 }
 
+.-rotate-y-180 {
+  transform: rotateY(-180deg);
+}
+
 .btn {
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
