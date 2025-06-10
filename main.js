@@ -69,3 +69,23 @@ toggleBtn.addEventListener('change', () => {
   card_3_front.classList.toggle('-rotate-y-180');
   card_3_back.classList.toggle('rotate-y-180');
 });
+
+//scrollreveal
+const sr = ScrollReveal({
+  origin: 'bottom',
+  distance: '60px',
+  duration: 3000,
+  delay: 400,
+});
+
+sr.reveal('.header', { origin: 'top' });
+sr.reveal('.home');
+sr.reveal('.features');
+sr.reveal('.save-money');
+sr.reveal('.work');
+sr.reveal('.testimonials');
+sr.reveal('.pricing');
+sr.reveal('.blog', { origin: 'top' });
+sr.reveal('.download');
+sr.reveal('.contact', { origin: 'top' });
+sr.reveal('.footer');
